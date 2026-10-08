@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاضرة العمل الميداني - MAGNET Field</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            color: #0d6efd;
+            text-align: center;
+            border-bottom: 3px solid #0d6efd;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
+        }
+        h2 {
+            color: #0b5ed7;
+            background-color: #e7f1ff;
+            padding: 12px 18px;
+            border-right: 6px solid #0d6efd;
+            border-radius: 6px;
+            margin-top: 40px;
+        }
+        .step-box {
+            background-color: #fdfdfe;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        ul, ol {
+            padding-right: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-card {
+            background: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            object-fit: contain;
+            border: 1px solid #eee;
+        }
+        .image-card p {
+            margin: 8px 0 0 0;
+            font-size: 0.88em;
+            color: #495057;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>تلخيص المحاضرة التطبيقية: برنامج MAGNET Field وأجهزة GPS</h1>
+
+    <!-- 1. طرق الرفع -->
+    <h2>1. طرق الرفع المساحي الميداني (Surveying Methods)</h2>
+    <div class="step-box">
+        <p>تعتمد طريقة الرفع على <strong>نوع وطبيعة الظاهرة</strong> المراد رصدها في الموقع:</p>
+        <ul>
+            <li><strong>رفع الأشكال الهندسية والمباني (Topo):</strong> الوقوف بدقة بالروفر على نقاط الانكسارات والأركان (Corners).</li>
+            <li><strong>رفع الأشكال الدائرية:</strong> رصد المركز، ثم المحيط الخارجي بفواصل منتظمة (كل 1 متر).</li>
+            <li><strong>رفع التلال وخطوط الكنتور:</strong> رصد دائرة بالأسفل، ودائرة بالمنتصف، ودائرة بالأعلى، ونقطة القمة.</li>
+            <li><strong>الرفع التلقائي (Auto Topo):</strong> لرفع المناطق الواسعة بمسافات منتظمة لإنشاء شبكة إحداثيات (Grid).</li>
+        </ul>
+
+        <div class="note">
+            خطوات الضبط من البرنامج:
+            <ol>
+                <li>الدخول لقائمة <code>Survey</code> ثم اختيار <code>Auto Topo</code>.</li>
+                <li>ضبط الـ Solution على <strong>Fixed Only</strong> لأقصى دقة.</li>
+                <li>اختيار Method على <strong>By Horiz Dist</strong> وتحديد المسافة من <code>Interval</code>.</li>
+            </ol>
+        </div>
+
+        <div class="image-gallery">
+            <div class="image-card"><img src="1.jpg" alt="صورة 1"><p>صورة 1</p></div>
+            <div class="image-card"><img src="2.jpg" alt="صورة 2"><p>صورة 2</p></div>
+            <div class="image-card"><img src="3.jpg" alt="صورة 3"><p>صورة 3</p></div>
+            <div class="image-card"><img src="4.jpg" alt="صورة 4"><p>صورة 4</p></div>
+            <div class="image-card"><img src="5.jpg" alt="صورة 5"><p>صورة 5</p></div>
+        </div>
+    </div>
+
+    <!-- 2. تعديل النقاط -->
+    <h2>2. تعديل وحذف النقاط المرفوعة (Edit Points)</h2>
+    <div class="step-box">
+        <p>عند رصد نقاط خاطئة في الموقع وتريد تعديلها أو حذفها:</p>
+        <ol>
+            <li>اذهب لقائمة <strong>Edit</strong> (الموجودة بجانب قائمة Connect).</li>
+            <li>اختر <strong>Points</strong> لتظهر لك قائمة النقاط.</li>
+            <li>حدد النقطة المراد حذفها واضغط <strong>Delete</strong> أو قم بتعديل إحداثياتها.</li>
+        </ol>
+
+        <div class="image-gallery">
+            <div class="image-card"><img src="6.jpg" alt="صورة 6"><p>صورة 6</p></div>
+            <div class="image-card"><img src="7.jpg" alt="صورة 7"><p>صورة 7</p></div>
+            <div class="image-card"><img src="8.jpg" alt="صورة 8"><p>صورة 8</p></div>
+        </div>
+    </div>
+
+    <!-- 3. تصدير البيانات والبلوتوث -->
+    <h2>3. تصدير البيانات ونقلها عبر البلوتوث (Export & Transfer)</h2>
+    <div class="step-box">
+        <h3>أولاً: تصدير الملف من البرنامج (Exchange Out):</h3>
+        <ol>
+            <li>من الشاشة الرئيسية اختر <strong>Exchange</strong> ثم <strong>To File</strong>.</li>
+            <li>حدد نوع البيانات (Points).</li>
+            <li>اختر الصيغة <strong>Topcon Text Custom (*.txt)</strong> والوحدة <strong>Meters</strong>.</li>
+            <li>حدد مسار الحفظ داخل مجلد المشروع في <strong>Jobs</strong>.</li>
+        </ol>
+        <div class="image-gallery">
+            <div class="image-card"><img src="9.jpg" alt="صورة 9"><p>صورة 9</p></div>
+            <div class="image-card"><img src="10.jpg" alt="صورة 10"><p>صورة 10</p></div>
+            <div class="image-card"><img src="11.jpg" alt="صورة 11"><p>صورة 11</p></div>
+            <div class="image-card"><img src="12.jpg" alt="صورة 12"><p>صورة 12</p></div>
+            <div class="image-card"><img src="13.jpg" alt="صورة 13"><p>صورة 13</p></div>
+        </div>
+
+        <h3 style="margin-top: 25px;">ثانياً: إرسال الملف بالبلوتوث (Beam File):</h3>
+        <ol>
+            <li>اذهب إلى <strong>Apps</strong> ثم <strong>Files</strong>.</li>
+            <li>اضغط ضغطة طويلة على الملف واختار <strong>Beam File...</strong>.</li>
+            <li>افتح البلوتوث من <code>Start</code> &larr; <code>Wireless Manager</code> واعمل اقتران (Add new device).</li>
+        </ol>
+        <div class="image-gallery">
+            <div class="image-card"><img src="14.jpg" alt="صورة 14"><p>صورة 14</p></div>
+            <div class="image-card"><img src="15.jpg" alt="صورة 15"><p>صورة 15</p></div>
+            <div class="image-card"><img src="16.jpg" alt="صورة 16"><p>صورة 16</p></div>
+            <div class="image-card"><img src="17.jpg" alt="صورة 17"><p>صورة 17</p></div>
+            <div class="image-card"><img src="18.jpg" alt="صورة 18"><p>صورة 18</p></div>
+        </div>
+    </div>
+
+    <!-- 4. التوقيع المساحي -->
+    <h2>4. استيراد البيانات والتوقيع المساحي (Import & Stakeout)</h2>
+    <div class="step-box">
+        <h3>أولاً: استيراد الملف للبرنامج:</h3>
+        <ol>
+            <li>أنشئ مشروعاً جديداً <strong>New Job</strong>.</li>
+            <li>اذهب إلى <strong>Exchange</strong> ثم <strong>From File</strong> لاستراد النقاط.</li>
+        </ol>
+        <div class="image-gallery">
+            <div class="image-card"><img src="19.jpg" alt="صورة 19"><p>صورة 19</p></div>
+            <div class="image-card"><img src="20.jpg" alt="صورة 20"><p>صورة 20</p></div>
+        </div>
+
+        <h3 style="margin-top: 25px;">ثانياً: التوقيع المساحي (Stakeout):</h3>
+        <ol>
+            <li>من قائمة Home اختر <strong>Stake</strong> ثم <strong>Points</strong>.</li>
+            <li>تأكد أن حالة الجهاز <strong>Fixed</strong>.</li>
+            <li>اتبع إرشادات الشاشة: <strong>Left/Right</strong> و <strong>Forward/Back</strong> و <strong>Cut/Fill</strong>.</li>
+        </ol>
+        <div class="image-gallery">
+            <div class="image-card"><img src="21.jpg" alt="صورة 21"><p>صورة 21</p></div>
+            <div class="image-card"><img src="22.jpg" alt="صورة 22"><p>صورة 22</p></div>
+            <div class="image-card"><img src="23.jpg" alt="صورة 23"><p>صورة 23</p></div>
+            <div class="image-card"><img src="24.jpg" alt="صورة 24"><p>صورة 24</p></div>
+            <div class="image-card"><img src="25.jpg" alt="صورة 25"><p>صورة 25</p></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
